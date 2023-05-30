@@ -1,19 +1,25 @@
-verListado();
+const username = document.getElementById('username')
+const password = document.getElementById('password')
+const button = document.getElementById('button')
 
+button.addEventListener ('click', (e) => {
+    e.preventDefault()
+    const data = {
+        username: username.value,
+        password: password.value,
+    }
 
-function salir ()
-
-function limpiar()
-{
-    localStorage.removeItem("Matrícula");
-    localStorage.removeItem("Nombre y Apellido");
-    localStorage.removeItem("Materia");
-    localStorage.removeItem("Ciclo Lectivo");
-    localStorage.removeItem("Nota Parcial 1");
-    localStorage.removeItem("Nota Parcial 2");
-    localStorage.removeItem("Nota Práctico");  
-
-    const tbody = document.querySelector("tbody");
-    tbody.innerHTML= "";
-    
+    console.log(data)
+})
+//otra opción de código
+function validarLogin() {
+    {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    }
+    if (username === "" || password === "") {
+      alert("Por favor, complete todos los campos");
+      return false;
+    }
+    return true;
 }

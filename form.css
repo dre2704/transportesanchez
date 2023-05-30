@@ -3,7 +3,7 @@ form {
       flex-direction: column;
       background: white;
       text-align: center;
-      padding: 20px 25px;
+      padding: 100px 25px;
       box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
     }
 
@@ -21,6 +21,7 @@ form label {
 form label .fa-solid {
       font-size: 20px;
       margin-right: 10px;
+      color: black;
 }
 
 form label input {
@@ -32,4 +33,13 @@ form label input {
       font-size: 18px;
 }
 
+form button {
+      color: white;
+      border: none;
+      background-color: rgb(65, 66, 66);
+      height: 40px;
+      width: 150px;
+      padding: 10px 15px;
+      cursor: pointer;
+}
 
